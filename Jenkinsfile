@@ -2,17 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Сборка') {
+        stage('Build') {
             steps {
                 echo 'building application'
             }
-        }
-        stage('Тестирование') {
-            steps {
-                echo 'TEST'
-            }
-        }
-        stage('Развертывание') {
+
+        stage('Deploy') {
             steps {
                 echo 'Переносим код в рабочую среду или создаем артефакт'
             }
